@@ -5,82 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Boy Who Could Stop Time — Anime Project</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
     body {
-      background-color: #0b0b0b;
-      color: #e6e6e6;
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.7;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://i.imgur.com/bgr9UuC.jpeg') no-repeat center center/cover;
+      color: #f8f8f8;
+      backdrop-filter: blur(3px);
+      overflow-x: hidden;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 0;
+      animation: fadeIn 2s ease;
+    }
+
     header {
       text-align: center;
-      padding: 60px 20px 30px;
-      background: linear-gradient(180deg, #111, #0b0b0b);
+      padding: 80px 20px 30px;
     }
+
     h1 {
-      font-size: 2em;
-      color: #ff4f4f;
+      font-size: 2.3em;
+      color: #ff5757;
+      text-shadow: 0 0 15px #ff4f4f;
+      animation: float 3s ease-in-out infinite alternate;
     }
+
+    p.subtitle {
+      color: #ffd27f;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
     .container {
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: 40px auto;
       padding: 20px;
     }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
     h2 {
       color: #ffb347;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
     }
+
     ul {
       list-style-type: none;
       padding-left: 10px;
     }
+
     li {
-      margin: 8px 0;
+      margin: 6px 0;
     }
+
     footer {
       text-align: center;
-      margin-top: 40px;
       padding: 20px;
-      color: #888;
-      border-top: 1px solid #222;
       font-size: 0.9em;
+      color: #bbb;
+      border-top: 1px solid #444;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>🕰️ The Boy Who Could Stop Time</h1>
-    <p>A Mystery / Supernatural / Emotional Anime Story</p>
-  </header>
+  <div class="overlay">
+    <header>
+      <h1>🕰️ The Boy Who Could Stop Time</h1>
+      <p class="subtitle">A Mystery / Supernatural / Emotional Anime Story</p>
+    </header>
 
-  <div class="container">
-    <h2>📜 Story Premise</h2>
-    <p>Eren, a quiet teenager, wakes up to find the world frozen — except for him. He learns he can stop time, but each use comes at a painful cost: someone he loves forgets he exists.</p>
+    <div class="container">
+      <section>
+        <h2>📜 Story Premise</h2>
+        <p>Eren, a quiet teenager, wakes up to find the world frozen — except for him. 
+        He learns he can stop time, but each use comes at a cost: someone he loves forgets he exists.</p>
+      </section>
 
-    <h2>🎬 Episodes</h2>
-    <ul>
-      <li>1. The Boy Who Could Stop Time</li>
-      <li>2. The World That Forgot to Move</li>
-      <li>3. Echoes Between Seconds</li>
-      <li>4. The Clockmaker</li>
-      <li>5. Payment Due</li>
-      <li>6. Reset or Remain</li>
-    </ul>
+      <section>
+        <h2>🎬 Episodes</h2>
+        <ul>
+          <li>1. The Boy Who Could Stop Time</li>
+          <li>2. The World That Forgot to Move</li>
+          <li>3. Echoes Between Seconds</li>
+          <li>4. The Clockmaker</li>
+          <li>5. Payment Due</li>
+          <li>6. Reset or Remain</li>
+        </ul>
+      </section>
 
-    <h2>🌌 Theme</h2>
-    <p>Dark, emotional, and surreal — exploring time, memory, and sacrifice.</p>
+      <section>
+        <h2>🌌 Theme</h2>
+        <p>Dark, emotional, and surreal — exploring time, memory, and sacrifice.</p>
+      </section>
 
-    <h2>🔖 Tags</h2>
-    <p>#anime #mystery #aiart #animation #sadstory</p>
+      <section>
+        <h2>📺 Coming Soon</h2>
+        <p>AI-generated short video scenes, character concept art, and soundtrack teasers will be added here.</p>
+      </section>
+    </div>
 
-    <h2>📺 Coming Soon</h2>
-    <p>AI-generated short video scenes and character art will be uploaded here soon.</p>
+    <footer>
+      <p>© 2025 anime_time_curse_project | Created by Morsmi</p>
+    </footer>
   </div>
-
-  <footer>
-    <p>© 2025 anime_time_curse_project | Created by Morsmi</p>
-  </footer>
 </body>
-  </html>
+</html>
