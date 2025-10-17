@@ -73,6 +73,21 @@
       object-fit: cover;
     }
 
+    .video-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+
+    .video-box iframe, .video-box video {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 100, 100, 0.4);
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -164,9 +179,20 @@
 
   <section>
     <h2>🎞️ Coming Soon</h2>
-    <p>
-      AI-generated short video scenes, character concept art, and soundtrack teasers will be added here.
-    </p>
+    <p>AI-generated short video scenes, concept art, and soundtrack teasers will be added here.</p>
+    <div class="video-box">
+      <!-- 🔹 OPTION 1: YouTube Embed -->
+      <iframe width="720" height="405" src="https://www.youtube.com/embed/v=ScMzIvxBSi4" 
+        title="Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+      <!-- 🔹 OPTION 2: Local MP4 hosted on GitHub -->
+      <!--
+      <video controls>
+        <source src="https://raw.githubusercontent.com/morsmi/anime_time_curse_project/main/teaser.mp4" type="video/mp4">
+      </video>
+      -->
+    </div>
   </section>
 
   <footer>
@@ -195,4 +221,4 @@
     window.addEventListener('load', reveal);
   </script>
 </body>
-</html>
+  </html>
